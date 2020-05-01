@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="customerinfo.js"></script>
+   <script src="cinfo.js"></script>
+   <script src = "iteminfo.js"></script>
+<script src = "amount.js"></script>
+</head>
+<body onload="load()">
+
+<div class="container border  bg-info text-dark ">
+    
+    <div class="row pl-3 m-3 p-2">
+        <div class="col-md-8 float-right">
+            <h1>Hotel ABC</h1>
+              <div>
+                kathmandu, 46000
+              </div>
+
+               <div>
+                Phone : 9806587447
+               </div>
+
+                <div>
+                Website : www.hotelabc.com
+               </div>
+            </div>
+        
+            <div class="col-md-2">
+                
+                <h2>INVOICE</h2>
+                <div id="date">Date : 2020/05/01 </div>
+                <div id="invoiceNumber">Invoice : 5657 </div>
+                <div id="customerId">Customer Id : 8765</div>
+
+
+            </div class="col-md-2  ">
+            <div>
+                <form class="form-inline p-3 ">
+                  
+                    <a class="btn btn-outline-light"  onclick="javascript:window.print()"> Print</a> 
+                        
+                    
+                  </form>
+
+
+            </div>
+
+
+            
+
+            </div>
+        </div>
+
+        <div class="container border">
+
+            <div class="row  pl-3 m-3 p-2">
+                
+                <div class="col-md-12 ">
+                    <div class=" w-25 bg-dark text-white p-1 "  >Bill To</div>
+                    <div class="ml-2">
+                        <div >NAME : <span id="customerName"></span> </div>
+                        
+                        <div>ADDRESS :<span id="customerAddress"></span> </div>
+                        <div>PHONE : <span id="customerPhone"></span> </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="container border">
+            <div class="row pl-3 m-3 p-2">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Sn</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody id="additem">
+                      
+                        
+                      
+                    </tbody>
+                  </table>
+
+            </div>
+
+        </div>
+
+        <div class="container border">
+            <div class="row pl-3 m-3 p-2">
+                <div class="col-lg-12 float-right">
+
+                    <table class="table-sm "  id="amountTable">
+                        <tbody>
+                            <tr>
+
+                                <td><b>Sub-total : </b></td>
+                                <td>Rs.<span id="subTotal">0</span></td>
+                            </tr>
+                            <tr>
+
+                                <td><b>Service Charge (10%) : </b> </td>
+                                <td>Rs.<span id="serviceCharge">0</span></td>
+                            </tr>
+                            <tr>
+
+                                <td><b>VAT (13%) : </b></td>
+                                <td>Rs.<span id="vat">0</span></td>
+                            </tr>
+
+                            <tr style="border-top: 1px solid black;">
+
+                                <td><b>Total : </b></td>
+                                <td>Rs.<span id="total">0</span></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+
+
+
+                </div>
+          </div>
+                
+        </div>
+
+        
+
+    </div>
+
+   
+       
+</div>
+<footer>
+<div class="container border  bg-info text-light ">
+    <div class="row ">
+        <div class="col-lg-12 text-center pt-1 ">
+            <div class="h-10 d-inline-block "> 
+                <p>hotelabc@gmail.com</p><p>98057645</p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+
+
+    
+</body>
+</html>
