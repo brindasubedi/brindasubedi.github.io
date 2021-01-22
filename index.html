@@ -62,7 +62,7 @@
         <a  class= "footer-link"  href="https://www.linkedin.com/in/brinda-subedi-373742169/">   <img src="images/linkedin.svg" alt="linkedinicon" height="20px" width="20px"> LinkedIn</a>
         <a  class= "footer-link"    href="https://twitter.com/brinda81224324"> <img src="images/twitter.png" alt="twittericon" height="20px" width="20px">  Twitter</a>
         <a  class= "footer-link"    href="https://www.facebook.com/subediBrinda/"> <img src="images/facebook.svg" alt="fbicon" height="20px" width="20px">  Facebook</a>
-        <p class="copyright"> @ 2020 Brinda_Subedi</p>
+        <p class="copyright"> @ <span id="currentYear"></span> Brinda_Subedi</p>
     
     </div>
 
@@ -70,8 +70,10 @@
 </div>
 
 <!--  -->
-
-    
-
+<script>
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("currentYear").innerHTML = year;
+</script>
 </body>
 </html>
